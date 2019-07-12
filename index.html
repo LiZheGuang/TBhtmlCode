@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+        html,
+        body,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        li,
+        dt,
+        dd,
+        p,
+        blockquote,
+        pre,
+        form,
+        fieldset,
+        table,
+        th,
+        td,
+        span,
+        input,
+        textarea {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .b {
+            padding: 15px 0;
+        }
+
+        .cmsnBox {
+            width: 1080px;
+            margin: 0 auto;
+        }
+
+        body {
+            padding-bottom: 100px;
+        }
+
+        .titleCmsn {
+            margin-top: 35px;
+            margin-bottom: 55px;
+        }
+
+        .titleCmsn_t {
+            font-size: 29px;
+            color: rgba(247, 22, 14, 1);
+            font-weight: bold;
+        }
+
+        .titleCmsn_t_mini {
+            font-size: 25px;
+        }
+
+        .titleCmsn_t_right {
+            font-size: 25px;
+            color: black;
+        }
+
+        .titleCmsn .solid {
+            width: 245px;
+            height: 2px;
+            background: #282828;
+        }
+
+        .titleCmsnImages {
+            width: 862px;
+            height: 674px;
+            background: #ebebeb;
+            margin: auto;
+            text-align: center;
+        }
+
+        .titleCmsnImages img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tbler {
+            width: 802px;
+            margin: auto;
+        }
+
+        .tbler_nav {
+            width: 100%;
+            height: 73px;
+            background: #777777;
+            border-bottom: 4px solid #EB2523;
+            display: flex;
+        }
+
+        .tbler_msg {
+            width: 100%;
+            height: 73px;
+            background: #777777;
+            border-bottom: 4px solid #EB2523;
+            display: flex;
+        }
+
+        .tablerItem {
+            overflow: hidden;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            display: inline-block;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .tbler_msgItem {
+            text-align: center;
+            color: #000000;
+            font-size: 17px;
+            height: 100%;
+            line-height: 37px;
+        }
+
+        .xinghao {
+            width: 30%;
+        }
+
+        .yangcheng {
+            width: 17.5%;
+        }
+
+        .dingweiMsg {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tbler_msgCnet {
+            /* margin-top: 3px; */
+            width: 100%;
+            height: 37px;
+            background: #777777;
+            display: flex;
+            margin-bottom: 7px;
+        }
+
+        .xinghaoMsg {
+            width: 30%;
+            color: white;
+            background: #EB2523;
+        }
+
+        .tbler_msgCnet:nth-child(2n + 1) {
+            background: white;
+        }
+
+        .tbler_msgCnet:nth-child(2n + 1) .xinghaoMsg {
+            background: rgb(243, 125, 127);
+
+        }
+
+        .titleCmsnContent {
+            /* margin-top: 55px; */
+            margin-left: 135px;
+            display: flex;
+        }
+
+        .pageSolid {
+            width: 938px;
+            height: 2px;
+            background: rgba(40, 40, 40, 1);
+            margin: auto;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: rgba(210, 33, 22, 1);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .titleCmsnContentUl {
+            margin-top: 72px;
+
+        }
+
+        .titleCmsnContentUl ul li {
+            width: 520px;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .titleCmsnContentUlImage {
+            width: 173px;
+            height: 354px;
+            background: #ebebeb;
+            margin-top: 30px;
+            margin-left: 85px;
+        }
+
+        .titleCmsnContentUlImage img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .t_img {
+            width: 188px;
+            height: 130px;
+            ;
+            margin-bottom: 15px;
+        }
+
+        .b_img {
+            width: 233px;
+            height: 163px;
+            margin-top: 15px;
+        }
+
+        .titleCmsnContent_leftImages {
+            text-align: center;
+        }
+
+        .jzpzTitle {
+            font-size: 29px;
+            font-weight: bold;
+            color: #F7160E;
+            text-align: center;
+        }
+
+        .jizupeizhi {
+            margin-left: 81px;
+            position: relative;
+        }
+
+        .jizupeizhiTop_img {
+            width: 637px;
+            height: 771px;
+        }
+
+        .jzpzTitle_dw {
+            position: absolute;
+            left: 0;
+            color: #F7160E;
+            font-weight: bold;
+            font-size: 29px;
+
+        }
+
+        .fs16 {
+            font-size: 16px;
+        }
+
+        .leftImageBox_img {
+            width: 189px;
+            height: 159px;
+            margin-right: 37px;
+
+        }
+
+        .leftImageBox_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .leftImageBox {
+            display: flex;
+            margin-top: 43px;
+        }
+        .jizupeizhi_content{
+            margin-left: 131px;
+        }
+    </style>
+    <div class="cmsnBox">
+        <div class="titleCmsn">
+            <div class="titleCmsn_t">柴油消防水泵 <span class="titleCmsn_t_mini">机组</span><span
+                    class="titleCmsn_t_right">-99kw</span></div>
+            <div class="solid"></div>
+            <div class="titleCmsnImages">
+                <img src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                    alt="">
+            </div>
+            <div class="tbler">
+                <div class="tbler_nav">
+                    <div class="xinghao tablerItem">型号</div>
+                    <div class="yangcheng tablerItem">
+                        <div class="dingweiMsg">
+                            <p>扬程</p>
+                            <p>(m)</p>
+                        </div>
+                    </div>
+                    <div class="yangcheng tablerItem">
+                        <div class="dingweiMsg">
+                            <p>流量</p>
+                            <p>(L/s)</p>
+                        </div>
+                    </div>
+                    <div class="yangcheng tablerItem">
+                        <div class="dingweiMsg">
+                            <p>轴功率</p>
+                            <p>(kW)</p>
+                        </div>
+                    </div>
+                    <div class="yangcheng tablerItem">
+                        <div class="dingweiMsg">
+                            <p>额定功率</p>
+                            <p>(kW)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbler_msgCnet" style="margin-top: 3px;">
+                    <div class="xinghaoMsg tbler_msgItem">XBC6.0/70-SY</div>
+                    <div class="yangcheng tbler_msgItem">60</div>
+                    <div class="yangcheng tbler_msgItem">70</div>
+                    <div class="yangcheng tbler_msgItem">53</div>
+                    <div class="yangcheng tbler_msgItem">99</div>
+                </div>
+                <div class="tbler_msgCnet">
+                    <div class="xinghaoMsg tbler_msgItem">XBC8.0/70-SY</div>
+                    <div class="yangcheng tbler_msgItem">80</div>
+                    <div class="yangcheng tbler_msgItem">70</div>
+                    <div class="yangcheng tbler_msgItem">71</div>
+                    <div class="yangcheng tbler_msgItem">99</div>
+                </div>
+                <div class="tbler_msgCnet">
+                    <div class="xinghaoMsg tbler_msgItem">XBC10/70-SY</div>
+                    <div class="yangcheng tbler_msgItem">100</div>
+                    <div class="yangcheng tbler_msgItem">70</div>
+                    <div class="yangcheng tbler_msgItem">86</div>
+                    <div class="yangcheng tbler_msgItem">99</div>
+                </div>
+            </div>
+        </div>
+        <div class="pageSolid"></div>
+
+        <div class="titleCmsnContent">
+            <div class="titleCmsnContentUl">
+                <ul>
+                    <li>
+                        <span class="dot"></span>双路蓄电池、手磁一体直流接触器，双重保障机组顺利启动运行
+                    </li>
+                    <li><span class="dot"></span>配备手动盘车机械启动装置，便于水泵调试、日常维护保养，紧急情况下可人工储能启动泵组</li>
+                    <li><span class="dot"></span>配备机底油箱、无须外置油箱，节省空间</li>
+
+                </ul>
+            </div>
+            <div class="titleCmsnContentUlImage">
+                <img src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                    alt="">
+            </div>
+        </div>
+        <div class="titleCmsnContent" style="margin-left: 80px;margin-top: 28px;margin-bottom: 43px;">
+            <div class="titleCmsnContent_leftImages">
+                <img class="t_img"
+                    src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                    alt="">
+                <p>参照NFPA20设计，满足国标GB6245-2006</p>
+                <img class="b_img"
+                    src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                    alt="">
+            </div>
+            <div class="titleCmsnContentUl" style="margin-left: 118px;">
+                <ul>
+                    <li>
+                        <span class="dot"></span>双路蓄电池、手磁一体直流接触器，双重保障机组顺利启动运行
+                    </li>
+                    <li><span class="dot"></span>配备手动盘车机械启动装置，便于水泵调试、日常维护保养，紧急情况下可人工储能启动泵组</li>
+                    <li><span class="dot"></span>配备机底油箱、无须外置油箱，节省空间</li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="pageSolid"></div>
+        <div class="jizupeizhi">
+            <div class="jzpzTitle">
+                <p class="jzpzTitle_dw">机 组 配 置</p>
+                <img class="jizupeizhiTop_img"
+                    src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                    alt="">
+            </div>
+            <div class="jizupeizhi_content">
+            <p class="fs16" style="margin-top:75px;">根据<span style="color: #FF2400; ">GB27898-2011 固定消防给水设备</span></p>
+            <p class="fs16">5.12.1:设备采用的柴油机应为工程机械用柴油机或消防专用柴油机</p>
+            <br>
+            <p class="fs16">5.12.2:设备采用的其他形式的发动机,应通过消防产品技术鉴定.</p>
+
+            <div class="leftImageBox">
+                <div class="leftImageBox_img">
+                    <img src="https://hbimg.huabanimg.com/d864dcd5c8aacfcd4190d6e8d1c6b292468e8bdb14db90-LuUt24_fw658"
+                        alt="">
+                </div>
+                <div class="right_img_box">
+                    <p style="font-size: 20px;color:#EE0202; "><span class="dot"></span>消防专用柴油机<br>工程机械用柴油机</p>
+
+                    <p>工程机械用柴油机满足普通工程建设消防标准</p>
+
+                    <p>消防专用柴油机满足石油化工机场机库等特殊行业消防标准</p>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
